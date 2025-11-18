@@ -578,6 +578,32 @@ a {
   }
 }
 
+.quote-highlight {
+  margin: 2rem 0;
+  padding: 1.6rem 1.8rem;
+  border-radius: $border-radius;
+  background: linear-gradient(135deg, rgba(11, 93, 63, 0.06), rgba(196, 163, 90, 0.08));
+  border: 1px solid rgba(196, 163, 90, 0.35);
+  box-shadow: $soft-shadow;
+  position: relative;
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: -22px;
+    left: 18px;
+    font-size: 3.2rem;
+    color: rgba(11, 93, 63, 0.22);
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.02rem;
+    color: $primary-dark;
+    font-weight: 500;
+  }
+}
+
 @media (max-width: 780px) {
   .site-header .container {
     flex-direction: column;
